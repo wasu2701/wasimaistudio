@@ -229,10 +229,8 @@
   <p class="section-sub reveal d2">A curated selection of AI-generated content, graphic design, and visual experiments.</p>
   <div class="filter-tabs reveal d3">
     <div class="tab active" onclick="filterWork(this,'all')">All</div>
+    <div class="tab" onclick="filterWork(this,'poster')">Photoshop &amp; AI Posters</div>
     <div class="tab" onclick="filterWork(this,'ai-video')">AI Videos</div>
-    <div class="tab" onclick="filterWork(this,'ai-poster')">AI Posters</div>
-    <div class="tab" onclick="filterWork(this,'graphic')">Graphic Design</div>
-    <div class="tab" onclick="filterWork(this,'photo')">Photoshop / Illustrator</div>
   </div>
   <div class="portfolio-grid" id="portfolio-grid"></div>
 </section>
@@ -308,25 +306,20 @@
     {cat:'ai-video',label:'AI Videos',title:'AI Video Extension',ytId:'-OtNM1T5dI0',isShort:false}
   ];
   var imageWorks=[
-    {cat:'ai-poster',label:'AI Posters',title:'Bright Minds',img:'https://i.postimg.cc/PxNP3Y82/freepik-create-an-image-23-young-cute-indian-students-in-light-blue-school-uniform-in-the-middle-sta.png'},
-    {cat:'ai-poster',label:'AI Posters',title:'AI Human Model',img:'https://i.postimg.cc/hvctdYqc/freepik-editorial-fashion-photography-meets-sw-eeping-natural-landscape-cinematic-golden-hour-lightin.png'},
-    {cat:'ai-poster',label:'AI Posters',title:'Digital Scholar',img:'https://i.postimg.cc/bJTjKN4B/freepik-the-style-is-candid-image-photography-with-natural-textures-and-highly-realistic-light-edito.png'},
-    {cat:'ai-poster',label:'AI Posters',title:'Concept Image',img:'https://i.postimg.cc/Px5p6kzB/Gemini-Generated-Image-5het045het045het.png'},
-    {cat:'ai-poster',label:'AI Posters',title:'Detailed Nature',img:'https://i.postimg.cc/4yDwPpBc/freepik-golden-toad-0005.png'},
-    {cat:'ai-poster',label:'AI Posters',title:'Animated Reality',img:'https://i.postimg.cc/QxcvPM56/freepik-hyper-realistic-dodo-bird-0007.png'},
-    {cat:'ai-poster',label:'AI Posters',title:'Evolution',img:'https://i.postimg.cc/nVDWjLdM/freepik-realistic-photo-of-a-butterfly-emerging-from-its-chrysalis-wings-partially-unfolded-soft-na.png'},
-    {cat:'ai-poster',label:'AI Posters',title:'The Journey',img:'https://i.postimg.cc/vm4zJPjJ/freepik-realistic-closeup-photo-of-a-caterpillar-eating-a-leaf-with-visible-bite-marks-natural-sunl.png'},
-    {cat:'ai-poster',label:'AI Posters',title:'Little Steps',img:'https://i.postimg.cc/wvKhS9DD/freepik-the-style-is-candid-image-photography-with-natural-textures-and-highly-realistic-light-edito.png'},
-    {cat:'ai-poster',label:'AI Posters',title:'Emotion',img:'https://i.postimg.cc/fLh98Bh8/freepik-the-style-is-candid-image-photography-with-natural-textures-and-highly-realistic-light-edito.png'},
-    {cat:'ai-poster',label:'AI Posters',title:'Splashed',img:'https://i.postimg.cc/LXRJt5t4/freepik-hot-soup-spilling-from-a-bowl-on-floorimg1-steaming-broth-splash-scattered-herbs-warm-kitche.png'},
-    {cat:'ai-poster',label:'AI Posters',title:'Rains',img:'https://i.postimg.cc/nhDrNB2W/freepik-child-getting-wet-in-the-rain-joyful-expression-splashing-in-a-large-puddle-droplets-frozen.png'},
-    {cat:'ai-poster',label:'AI Posters',title:'Eye Contact',img:'https://i.postimg.cc/Y0P2sCWp/freepik-the-style-is-candid-image-photography-with-natural-textures-and-highly-realistic-light-edito.png'},
-    {cat:'graphic',label:'Graphic Design',title:'Vector Illustration',img:'https://i.postimg.cc/hvNg0Zk0/freepik-fun-whimsical-elements-with-bright-colors-and-a-sense-of-joy-and-creativity-childfriendly-ve.png'},
-    {cat:'photo',label:'Photoshop / Illustrator',title:'Poster Graphic',img:'https://i.ibb.co/ksTsZc5k/Whats-App-Image-2026-04-22-at-7-32-46-PM.jpg'},
-    {cat:'photo',label:'Photoshop / Illustrator',title:'Poster Graphic',img:'https://i.ibb.co/Lz6dqZns/Whats-App-Image-2026-04-22-at-7-32-46-PM-1.jpg'},
-    {cat:'photo',label:'Photoshop / Illustrator',title:'Poster Graphic',img:'https://i.ibb.co/pryDCGg5/Whats-App-Image-2026-04-23-at-3-08-48-PM-1.jpg'},
-    {cat:'photo',label:'Photoshop / Illustrator',title:'Poster Graphic',img:'https://i.ibb.co/wFMZMk0m/Whats-App-Image-2026-04-23-at-3-08-48-PM.jpg'},
-    {cat:'photo',label:'Photoshop / Illustrator',title:'Poster Graphic',img:'https://i.ibb.co/NdYywRcw/Whats-App-Image-2026-04-23-at-3-08-47-PM.jpg'}
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Food Commercial Vol.1',img:'https://i.ibb.co/k64N6G0G/magnific-remove-the-text-NZw-Xdx-V6-D9.png'},
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Food Commercial Vol.2',img:'https://i.ibb.co/7xBtbdJz/magnific-create-a-vibrant-premium-3-GO8-Vu3-REY.png'},
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Food Commercial Vol.3',img:'https://i.ibb.co/Jwqvh0QG/magnific-remove-the-text-w-Px0-NUA7-EI.png'},
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Food Commercial Vol.4',img:'https://i.ibb.co/mrFkr4JC/magnific-remove-the-text-Bm-Trmsqo-QR.png'},
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Ferrari Commercial',img:'https://i.ibb.co/NgLfsCDC/magnific-create-an-ultracinematic-k-Lui-CCN16-B.png'},
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Apple iPhone Commercial',img:'https://i.ibb.co/39xLkCm4/magnific-create-an-ultracinematic-g-Jkn-FRj-SXO.png'},
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Rolex Watch Commercial',img:'https://i.ibb.co/NdL37f5h/magnific-create-an-ultracinematic-8v-Mx-O4-PIr-U.png'},
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Restaurant Commercial',img:'https://i.ibb.co/XkVGbgjm/magnific-design-a-sophisticated-re-74jc-U1c-JAL.png'},
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Coffee Brand Commercial',img:'https://i.ibb.co/PV2HYk4/magnific-design-a-premium-advertis-Xt0-KRSDBfo.png'},
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Poster Graphic',img:'https://i.ibb.co/ksTsZc5k/Whats-App-Image-2026-04-22-at-7-32-46-PM.jpg'},
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Poster Graphic',img:'https://i.ibb.co/Lz6dqZns/Whats-App-Image-2026-04-22-at-7-32-46-PM-1.jpg'},
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Poster Graphic',img:'https://i.ibb.co/pryDCGg5/Whats-App-Image-2026-04-23-at-3-08-48-PM-1.jpg'},
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Poster Graphic',img:'https://i.ibb.co/wFMZMk0m/Whats-App-Image-2026-04-23-at-3-08-48-PM.jpg'},
+    {cat:'poster',label:'Photoshop & AI Posters',title:'Poster Graphic',img:'https://i.ibb.co/NdYywRcw/Whats-App-Image-2026-04-23-at-3-08-47-PM.jpg'}
   ];
 
   var lightboxImages=[];
@@ -384,7 +377,7 @@
   function renderGrid(filter){
     var grid=document.getElementById('portfolio-grid');
     grid.innerHTML='';
-    var all=videoWorks.concat(imageWorks);
+    var all=imageWorks.concat(videoWorks);
     var list=filter==='all'?all:all.filter(function(w){return w.cat===filter;});
     list.forEach(function(w){
       if(w.ytId){grid.appendChild(makeVideoCard(w));}
